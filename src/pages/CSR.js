@@ -12,7 +12,7 @@ export default function CSR() {
         <Container className="container-style">
             <Row>
                 <Col sm={12}>
-                    <h1>Company Social Responsibility</h1>
+                    <h1>Corporate Social Responsibility</h1>
                 </Col>
             </Row>
             <hr />
@@ -44,6 +44,26 @@ export default function CSR() {
             <Row>
                 <Col sm={12}>
                     <h3>Subheading 2</h3>
+                    <p>
+                        In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.
+                        Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)
+                    </p>
+                </Col>
+            </Row>
+            <br />
+            <Row>
+                <Col sm={12}>
+                    <h3>Subheading 3</h3>
+                    <p>
+                        In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.
+                        Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)
+                    </p>
+                </Col>
+            </Row>
+            <br />
+            <Row>
+                <Col sm={12}>
+                    <h3>Subheading 4</h3>
                     <p>
                         In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.
                         Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)

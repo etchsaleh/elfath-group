@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Jumbotron, Button } from 'reactstrap';
 
 export default function OurCompany() {
 
@@ -16,6 +16,16 @@ export default function OurCompany() {
                 </Col>
             </Row>
             <hr />
+            <Row>
+                <Col sm={12}>
+                    <Jumbotron fluid>
+                        <Container fluid>
+                            <h1 className="display-3">Some info here</h1>
+                            <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        </Container>
+                    </Jumbotron>
+                </Col>
+            </Row>
             <Row>
                 <Col sm={12}>
                     <p>
