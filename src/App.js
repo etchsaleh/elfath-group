@@ -1,26 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import './styles/App.css';
+import Navbars from './components/Navbars';
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
+import Home from './pages/Home';
+import { AnimatedSwitch } from 'react-router-transition';
+import Sidebar from './components/Sidebar';
+import OurCompany from './pages/OurCompany';
+import BusinessAreas from './pages/BusinessAreas';
+import CSR from './pages/CSR';
+import Contact from './pages/Contact';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+
+  render() {
+    return (
+      <>
+      <Router>
+        <div style={{padding:0}}>
+          <div style={{top: 0, left: 0, right: 0, position: 'fixed', zIndex: 400}}>
+              <Navbars />
+              <Sidebar />
+          </div>
+          <div style={{paddingTop: "0", left: 0, right: 0}}>
+          <AnimatedSwitch
+            atEnter={{ opacity: 0 }}
+            atLeave={{ opacity: 0 }}
+            atActive={{ opacity: 1 }}
+            className="switch-wrapper"
+          >
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route exact path="/our-company">
+                  <OurCompany />
+                </Route>
+                <Route exact path="/business-areas">
+                  <BusinessAreas />
+                </Route>
+                <Route exact path="/csr">
+                  <CSR />
+                </Route>
+                <Route exact path="/contact">
+                  <Contact />
+                </Route>
+            </AnimatedSwitch>
+          </div>
+        </div>
+      </Router>
+      </>
+    );
+  }
 }
-
-export default App;
