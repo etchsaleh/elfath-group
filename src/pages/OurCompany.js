@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 export default function OurCompany() {
+
+    useEffect(() => {
+        document.title += " - Our Company";
+    }, []);
+
     return(
         <>
          <Container className="container-style">

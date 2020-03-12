@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 export default function Contact() {
+
+    useEffect(() => {
+        document.title += " - Contact";
+    }, []);
+
     return(
         <>
          <Container className="container-style">
