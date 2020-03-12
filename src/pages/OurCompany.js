@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { Container, Row, Col, Jumbotron, Button } from 'reactstrap';
+import { Container, Row, Col, Jumbotron } from 'reactstrap';
 
 export default function OurCompany() {
 
     useEffect(() => {
-        document.title += " - Our Company";
+        document.title = "El Fath Group - Our Company";
     }, []);
 
     return(

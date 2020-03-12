@@ -35,10 +35,10 @@ export default class Navbars extends Component {
                     </div>
                 </Link>
                 <div>
-                    <NavLink to="/our-company" activeStyle={{color: "#083597"}} className={`navlink link ${this.state.isScrolled ? "nav-light" : "nav-dark"}`}>Our Company</NavLink>
-                    <NavLink to="/business-areas" activeStyle={{color: "#083597"}} className={`navlink link ${this.state.isScrolled ? "nav-light" : "nav-dark"}`}>Business Areas</NavLink>
-                    <NavLink to="/csr" activeStyle={{color: "#083597"}} className={`navlink link ${this.state.isScrolled ? "nav-light" : "nav-dark"}`}>Corporate Social Responsibility</NavLink>
-                    <NavLink to="/contact" activeStyle={{color: "#083597"}} className={`navlink link ${this.state.isScrolled ? "nav-light" : "nav-dark"}`}>Contact</NavLink>
+                    <NavLink to="/our-company" activeStyle={{color:`${this.state.isScrolled ? "#0074ff" : "#14191f"}`}} className={`navlink link ${this.state.isScrolled ? "nav-light" : "nav-dark"}`}>Our Company</NavLink>
+                    <NavLink to="/business-areas" activeStyle={{color:`${this.state.isScrolled ? "#0074ff" : "#14191f"}`}} className={`navlink link ${this.state.isScrolled ? "nav-light" : "nav-dark"}`}>Business Areas</NavLink>
+                    <NavLink to="/csr" activeStyle={{color:`${this.state.isScrolled ? "#0074ff" : "#14191f"}`}} className={`navlink link ${this.state.isScrolled ? "nav-light" : "nav-dark"}`}>Corporate Social Responsibility</NavLink>
+                    <NavLink to="/contact" activeStyle={{color:`${this.state.isScrolled ? "#0074ff" : "#14191f"}`}} className={`navlink link ${this.state.isScrolled ? "nav-light" : "nav-dark"}`}>Contact</NavLink>
                 </div>
             </div>
             </>

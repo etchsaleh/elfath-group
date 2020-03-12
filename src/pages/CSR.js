@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 export default function CSR() {
 
     useEffect(() => {
-        document.title += " - CSR";
+        document.title = "El Fath Group - CSR";
     }, []);
 
     return(

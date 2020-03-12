@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 export default function Contact() {
 
     useEffect(() => {
-        document.title += " - Contact";
+        document.title = "El Fath Group - Contact";
     }, []);
 
     return(

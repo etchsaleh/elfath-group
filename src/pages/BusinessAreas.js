@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 export default function BusinessAreas() {
 
     useEffect(() => {
-        document.title += " - Business Areas";
+        document.title = "El Fath Group - Business Areas";
     }, []);
 
     return(

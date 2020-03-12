@@ -9,7 +9,8 @@
 
 .nav-dark {
   color: white;
-  background-color: #14191f;
+  /* background-color: #14191f; */
+  background-color: #0074fffa;
   transition: background-color 0.3s linear;
 }
 
@@ -202,12 +203,14 @@ a.nav-light.logo:hover {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #083597;
+  /* background: #083597; */
+  background: rgb(20, 25, 31);
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #0b46c4;
+  /* background: #0b46c4; */
+  background: rgb(41, 52, 65);
 }
 
 /* Position and sizing of clickable cross button */
@@ -232,11 +235,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #083597;
+  /* background: #083597; */
+  background: #0074fffa;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   font-family: AvenirNext-Bold;
-  /* font-size: 18px; */
 }
 
 /* Wrapper for item list */
