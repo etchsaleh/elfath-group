@@ -1,8 +1,8 @@
 .navbars {
   width: 100%;
   height: 3.5rem;
-  display: flex;              /* establish flex container */
-  align-items: center;        /* center items horizontally, in this case */
+  display: flex; /* establish flex container */
+  align-items: center; /* center items horizontally, in this case */
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -42,7 +42,9 @@
 .flip-container:hover .tile {
   transform: rotateY(180deg);
 }
-.tile, .front, .back {
+.tile,
+.front,
+.back {
   width: 100%;
   height: 15rem;
 }
@@ -51,7 +53,8 @@
   transform-style: preserve-3d;
   position: relative;
 }
-.front, .back {
+.front,
+.back {
   backface-visibility: hidden;
   position: absolute;
 }
@@ -69,10 +72,10 @@
 }
 
 .tile-container {
-  display: flex;              /* establish flex container */
-  flex-direction: row;     /* stack flex items vertically */
-  justify-content: center;    /* center items vertically, in this case */
-  align-items: center;        /* center items horizontally, in this case */
+  display: flex; /* establish flex container */
+  flex-direction: row; /* stack flex items vertically */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
   color: #14191f;
   text-align: center;
 }
@@ -81,7 +84,7 @@
 a.link {
   position: relative;
   text-decoration: none;
-  transition: color .4s ease-out;
+  transition: color 0.4s ease-out;
   color: white;
 }
 
@@ -98,14 +101,13 @@ a.link:hover:after {
 
 a.link:after {
   border-radius: 1em;
-  border-top: .1em solid #2F56B0;
+  border-top: 0.1em solid #2f56b0;
   content: "";
   position: absolute;
-    right: 100%;
-    bottom: .14em;
-    left: 0;
-  transition: right .4s cubic-bezier(0,.5,0,1),
-              border-color .4s ease-out;
+  right: 100%;
+  bottom: 0.14em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out;
 }
 
 a.link.nav-dark {
@@ -127,11 +129,11 @@ a.nav-light.link:hover:after {
 }
 
 a.nav-dark.link:after {
-  border-top: .1em solid rgb(255, 255, 255);
+  border-top: 0.1em solid rgb(255, 255, 255);
 }
 
 a.nav-light.link:after {
-  border-top: .1em solid #14191f;
+  border-top: 0.1em solid #14191f;
 }
 
 a.logo {
@@ -162,7 +164,7 @@ a.nav-dark.logo:hover {
 
 a.nav-light.logo:hover {
   text-decoration: none;
-  color: #28303a
+  color: #28303a;
 }
 
 .side-link {
@@ -276,27 +278,32 @@ body {
   padding-top: 4rem;
 }
 
-@media (max-width:576px){
-
-  h1,.h1{
-  font-size:24px;
+@media (max-width: 576px) {
+  h1,
+  .h1 {
+    font-size: 24px;
   }
-  h2,.h2{
-  font-size:22px;
+  h2,
+  .h2 {
+    font-size: 22px;
   }
-  h3,.h3{
-  font-size:20px;
+  h3,
+  .h3 {
+    font-size: 20px;
   }
-  h4,.h4{
-  font-size:18px;
+  h4,
+  .h4 {
+    font-size: 18px;
   }
-  h5,.h5{
-  font-size:16px;
+  h5,
+  .h5 {
+    font-size: 16px;
   }
-  h6,.h6{
-  font-size:16px;
+  h6,
+  .h6 {
+    font-size: 16px;
   }
-  }
+}
 
 .scroll-container {
   scroll-snap-type: y mandatory;
