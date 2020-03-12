@@ -3,6 +3,8 @@
   height: 3.5rem;
   display: flex;              /* establish flex container */
   align-items: center;        /* center items horizontally, in this case */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .nav-dark {
@@ -194,7 +196,7 @@ a.nav-light.logo:hover {
   position: fixed;
   width: 36px;
   height: 30px;
-  right: 1rem;
+  right: 2rem;
   top: 0.8rem;
 }
 

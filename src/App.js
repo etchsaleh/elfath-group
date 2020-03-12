@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
 import './styles/App.css';
-import Navbars from './components/Navbars';
 import {
   BrowserRouter as Router,
   Route,
 } from "react-router-dom";
-import Home from './pages/Home';
 import { AnimatedSwitch } from 'react-router-transition';
+import Navbars from './components/Navbars';
 import Sidebar from './components/Sidebar';
+import Home from './pages/Home';
 import OurCompany from './pages/OurCompany';
 import BusinessAreas from './pages/BusinessAreas';
 import CSR from './pages/CSR';
