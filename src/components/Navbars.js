@@ -16,7 +16,7 @@ export default class Navbars extends Component {
   }
 
   handleScroll = e => {
-    const scrolled = window.scrollY > 70 ? true : false;
+    const scrolled = window.scrollY > 50 ? true : false;
     this.setState({ isScrolled: !scrolled });
   };
 
@@ -25,7 +25,7 @@ export default class Navbars extends Component {
       <>
         <div
           className={`navbars d-flex justify-content-between ${
-            this.state.isScrolled ? "nav-light" : "nav-dark"
+            this.state.isScrolled ? "nav-light" : "nav-dark nav-box-shadow"
           }`}
         >
           <Link

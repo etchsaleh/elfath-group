@@ -9,13 +9,16 @@ import OurCompany from "./pages/OurCompany";
 import BusinessAreas from "./pages/BusinessAreas";
 import CSR from "./pages/CSR";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default class App extends Component {
   render() {
     return (
       <>
         <Router>
-          <div style={{ padding: 0 }}>
+          <ScrollToTop />
+          <div>
             <div
               style={{
                 top: 0,
@@ -28,7 +31,7 @@ export default class App extends Component {
               <Navbars />
               <Sidebar />
             </div>
-            <div style={{ paddingTop: "0", left: 0, right: 0 }}>
+            <div>
               <AnimatedSwitch
                 atEnter={{ opacity: 0 }}
                 atLeave={{ opacity: 0 }}
@@ -53,6 +56,7 @@ export default class App extends Component {
               </AnimatedSwitch>
             </div>
           </div>
+          <Footer />
         </Router>
       </>
     );
