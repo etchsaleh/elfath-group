@@ -12,6 +12,7 @@ export default function Footer(props) {
         <a
           href="https://etchsaleh.github.io"
           target="_blank"
+          rel="noreferrer noopener"
           className="link nav-light"
         >
           <b>etchsaleh</b>
